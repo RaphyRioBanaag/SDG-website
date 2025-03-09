@@ -18,5 +18,5 @@
 <ins>Score display with feedback</ins>
 <ins>Color indicators for answers</ins>
 
-[!NOTE]
-The Picture Assets are complicated to work and won't work(◞‸ ◟)💧
+> [!NOTE]
+> The Assets are complicated to work on and won't work(◞‸ ◟)💧
