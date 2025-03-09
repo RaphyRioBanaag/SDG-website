@@ -10,7 +10,7 @@
 4. The style will remain the same, but with an additional quiz
 
 ## FUNCTIONS
-**The quiz will now appear on your _"Learn More" page_ and meets all project requirements including:**
+**The quiz will now appear at the _"Learn More" page_ and meets all project requirements including:**
 
 <ins>Use of functions and control structures</ins>\
 <ins>Event handling for user interactions</ins>\
