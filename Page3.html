@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Action Hub - Resources</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #e6f2ff;
+      margin: 0;
+      color: #222;
+    }
+    header {
+      background: #2e8b57;
+      color: #fff;
+      padding: 20px 0 10px 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.07);
+    }
+    .header-title {
+      height: 60px;
+      vertical-align: middle;
+    }
+    nav {
+      margin-top: 10px;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 18px;
+      font-size: 1.1em;
+      padding: 8px 16px;
+      border-radius: 20px;
+      transition: background 0.2s;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+    }
+    nav a:hover {
+      background: #226644;
+    }
+    main.content {
+      max-width: 700px;
+      margin: 40px auto 30px auto;
+      background: #fff;
+      border-radius: 18px;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+      padding: 32px 28px;
+    }
+    #resources h2 {
+      text-align: center;
+      color: #2e8b57;
+      margin-bottom: 28px;
+      font-size: 2em;
+      letter-spacing: 1px;
+    }
+    .box {
+      display: flex;
+      align-items: center;
+      gap: 22px;
+      background: #f0f8ff;
+      border-radius: 12px;
+      padding: 18px 20px;
+      margin-bottom: 28px;
+      box-shadow: 0 2px 8px rgba(46,139,87,0.06);
+    }
+    .box img {
+      width: 110px;
+      height: 110px;
+      object-fit: cover;
+      border-radius: 10px;
+      border: 2px solid #b2dfdb;
+      background: #fff;
+    }
+    .box p {
+      font-size: 1.13em;
+      color: #333;
+      margin: 0;
+    }
+    audio, video {
+      display: block;
+      margin: 24px auto;
+      width: 95%;
+      max-width: 500px;
+      background: #f8f8f8;
+      border-radius: 8px;
+      box-shadow: 0 1px 6px rgba(46,139,87,0.07);
+    }
+    footer {
+      text-align: center;
+      padding: 18px 0;
+      background: #2e8b57;
+      color: #fff;
+      font-size: 1em;
+      margin-top: 40px;
+      border-radius: 0 0 10px 10px;
+    }
+    @media (max-width: 600px) {
+      main.content {
+        padding: 16px 6px;
+      }
+      .box {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 10px;
+      }
+      .box img {
+        width: 90px;
+        height: 90px;
+      }
+      audio, video {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><img src="assets/Sprites/title.png" alt="Climate Action Resources" class="header-title"></h1>
+    <nav>
+      <a href="Main.html" class="icon-home"><img src="assets/Sprites/home.png" alt="Home" width="22"> Home</a>
+      <a href="Paige.html" class="icon-learn"><img src="assets/Sprites/learn.png" alt="Learn More" width="22"> Learn More</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section id="resources">
+      <h2>Top Climate Resources</h2>
+      <article class="box">
+        <img src="images/resource.jpg" alt="Resource">
+        <p>Learn about climate policies and global initiatives to combat climate change.</p>
+      </article>
+      <audio controls>
+        <source src="audio/Radio stations are championing the delivery of climate information to farmers in Ghana.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <video controls poster="images/resource.jpg">
+        <source src="video/The Climate Hub at SXSW 2023 - The broadcast in 3 minutes.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Climate Action Hub</p>
+  </footer>
+
+</body>
+</html>

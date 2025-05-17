@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Climate Action Hub - Learn More</title>
+  <link rel="stylesheet" href="style.css">
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      background: #eaf6f6;
+      margin: 0;
+      padding: 0;
+      color: #222;
+    }
+    header {
+      background: #2e8b57;
+      color: #fff;
+      padding: 1.5rem 0 1rem 0;
+      text-align: center;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+    .header-title {
+      height: 60px;
+      vertical-align: middle;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1.5rem;
+      font-weight: 500;
+      font-size: 1.1rem;
+      transition: color 0.2s;
+      display: inline-flex;
+      align-items: center;
+    }
+    nav a img {
+      height: 24px;
+      margin-right: 0.5rem;
+      vertical-align: middle;
+    }
+    nav a:hover {
+      color: #ffe082;
+    }
+    main.content {
+      max-width: 800px;
+      margin: 2rem auto;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 24px rgba(44, 62, 80, 0.08);
+      padding: 2rem 2.5rem;
+    }
+    section {
+      margin-bottom: 2.5rem;
+    }
+    #quiz-section h2 {
+      color: #2e8b57;
+      margin-bottom: 1rem;
+    }
+    #quiz-container {
+      background: #f4f9f4;
+      border-radius: 10px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(46,139,87,0.06);
+    }
+    #question-container {
+      font-size: 1.2rem;
+      margin-bottom: 1rem;
+      font-weight: 500;
+    }
+    .options-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 0.75rem;
+      margin-bottom: 1rem;
+    }
+    .options-grid button {
+      background: #e0f2f1;
+      border: 1px solid #b2dfdb;
+      border-radius: 6px;
+      padding: 0.75rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s, border 0.2s;
+    }
+    .options-grid button:hover {
+      background: #b2dfdb;
+      border-color: #26a69a;
+    }
+    #navigation {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem;
+    }
+    .quiz-btn {
+      background: #2e8b57;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      padding: 0.6rem 1.5rem;
+      font-size: 1rem;
+      cursor: pointer;
+      transition: background 0.2s;
+    }
+    .quiz-btn:hover {
+      background: #388e3c;
+    }
+    #score-container {
+      font-weight: bold;
+      color: #388e3c;
+      margin-top: 1rem;
+      font-size: 1.1rem;
+    }
+    section h2 {
+      color: #2e8b57;
+    }
+    footer {
+      background: #2e8b57;
+      color: #fff;
+      text-align: center;
+      padding: 1rem 0;
+      margin-top: 2rem;
+      border-radius: 0 0 12px 12px;
+    }
+    @media (max-width: 600px) {
+      main.content {
+        padding: 1rem;
+      }
+      .options-grid {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1><img src="assets/Sprites/title.png" alt="Learn More About Climate Action" class="header-title"></h1>
+    <nav>
+      <a href="Main.html" class="icon-home"><img src="assets/Sprites/home.png" alt="Home"> Back to Home</a>
+      <a href="Page3.html" class="icon-resources"><img src="assets/Sprites/resources.png" alt="Resources"> Resources</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <section id="quiz-section">
+      <h2>Test Your Climate Knowledge</h2>
+      <div id="quiz-container">
+        <div id="question-container"></div>
+        <div id="options-container" class="options-grid"></div>
+        <div id="navigation">
+          <button id="prev-btn" class="quiz-btn">Previous</button>
+          <button id="next-btn" class="quiz-btn">Next</button>
+        </div>
+        <div id="score-container"></div>
+      </div>
+    </section>
+    <section>
+      <h2>Climate Action: Why It Matters</h2>
+      <p>
+        Climate action is essential for preserving our planet for future generations. By reducing emissions and promoting sustainable practices, we can mitigate the effects of climate change.
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2024 Climate Action Hub</p>
+  </footer>
+
+  <script src="quiz.js"></script>
+</body>
+</html>
